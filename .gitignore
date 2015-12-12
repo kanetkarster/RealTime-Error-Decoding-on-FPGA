@@ -48,7 +48,6 @@
 ##
 !*.bdf
 !*.vhd
-!*.v
 ##
 !*.ptf
 !*.bsf
@@ -63,3 +62,6 @@
 
 !*.tcl
 
+!/src
+!/tests/[^vhd]
+*.bak
