@@ -1,10 +1,18 @@
-library ieee;
+--! @file Stage2.vhd
+--! @author Jit Kanetkar (2015)
+--! @brief Decodes a 8 bit Hamming 844 CW using the Viterbi Algorithm
 
+library ieee;
 
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
--- use ieee.float_pkg.all;
 
+--! @brief Stage 2 of Viterbi Decoder
+--! @param c1,c2 noisy input bits
+--! @param p1..p4 probabilites of each state in trellis from previous stage
+--! @retval p1..p4 probabilites of each state in trellis
+--! @retval top most probable data from top of trellis
+--! @retval bot most probable data from bottom of trellis
 entity st2 is
 	PORT (
 		c1 : in signed(9 downto 0);

@@ -1,10 +1,15 @@
-library ieee;
+--! @file Hamming844Decoder.vhd
+--! @author Jit Kanetkar (2015)
+--! @brief Decodes a 8 bit Hamming 844 CW using the Viterbi Algorithm
 
+library ieee;
 
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
--- use ieee.float_pkg.all;
 
+--! @brief Decodes a Hamming 844 message
+--! @param c1..c8 input bits
+--! @retval data most probable data
 entity Hamming844Decoder is
 	PORT (
 		clk : in std_logic;

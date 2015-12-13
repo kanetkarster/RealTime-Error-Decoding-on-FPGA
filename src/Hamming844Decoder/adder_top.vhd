@@ -1,10 +1,15 @@
-library ieee;
+--! @file adder_top.vhd
+--! @author Jit Kanetkar (2015)
+--! @brief Decodes a 8 bit Hamming 844 CW using the Viterbi Algorithm
 
+library ieee;
 
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
--- use ieee.float_pkg.all;
 
+--! @brief Adder for top of trellis. Performs $out = (1 - 2*a) + (1 - 2*b)$
+--! @param data_in1, data_in2 addends
+--! @retval prob_out probabilities of this state
 entity adder_top is
 	PORT (
 		data_in1 : in signed(9 downto 0);

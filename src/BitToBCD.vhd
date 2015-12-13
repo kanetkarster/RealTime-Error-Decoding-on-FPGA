@@ -14,8 +14,8 @@ use ieee.std_logic_1164.all;
 --! @retval bcd `b` encoded as BCD
 --! BCD is the of the following structure:
 --!
---! | sign | integer | decimal | (component)
---! |  1   |    3    |    6    | (# of bits)
+--! | sign | integer | decimal | (component) |
+--! |  1   |    3    |    6    | (# of bits) |
 --!
 entity BitToBCD is
 	port (
