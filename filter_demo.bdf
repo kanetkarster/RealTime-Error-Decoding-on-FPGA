@@ -551,7 +551,7 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "c1[6],c2[6],c3[6],c4[6],c5[6],c6[6],c7[6],c8[6],left_channel_audio_in[23..0]" (rect 952 168 1316 180)(font "Arial" ))
+	(text "c1[6],c2[6],c3[6],c4[6],c5[6],c6[6],c7[6],c8[6],left_channel_audio_in[23..0]" (rect 1128 192 1492 204)(font "Arial" ))
 	(pt 1128 136)
 	(pt 1064 136)
 	(bus)
