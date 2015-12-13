@@ -1,7 +1,0 @@
-
-entity xor32 is
-	port (
-		a, b : std_logic_vector(31 downto 0),
-		c : out std_logic_vector(31 downto 0)
-		);
-	

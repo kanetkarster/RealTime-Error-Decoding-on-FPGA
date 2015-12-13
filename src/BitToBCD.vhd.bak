@@ -1,3 +1,0 @@
---! @file BitToBCD.vhd
---! @author Jit Kanetkar (2015)
---! @brief Encodes a 4 bit input using the Hamming 844 formula
