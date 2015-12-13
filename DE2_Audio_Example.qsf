@@ -25,7 +25,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY toplevel
+set_global_assignment -name TOP_LEVEL_ENTITY "noise-generator"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 7.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:21:52  JUNE 05, 2008"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -478,12 +478,6 @@ set_global_assignment -name PARTITION_COLOR 2147039 -entity Hamming844Encoder -s
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/skanet1/Final/tests/xor32-test.vwf"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "Blast FPGA" -entity "noise-generator.bdf"
 set_global_assignment -name EDA_INPUT_GND_NAME GND -entity "noise-generator.bdf" -section_id eda_design_synthesis
 set_global_assignment -name EDA_INPUT_VCC_NAME VDD -entity "noise-generator.bdf" -section_id eda_design_synthesis
@@ -524,4 +518,12 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE "tests/xor32-test.vwf"
 set_global_assignment -name VHDL_FILE src/NoiseAdder.vhd
 set_global_assignment -name BDF_FILE "src/make-signal.bdf"
 set_global_assignment -name VHDL_FILE src/xor10.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE "tests/make-noise-test.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE "tests/noise-generator.vwf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/skanet1/Final/tests/noise-generator.vwf"

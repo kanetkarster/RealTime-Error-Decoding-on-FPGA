@@ -503,12 +503,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "noise[9..0]" (rect 1074 328 1125 340)(font "Arial" ))
-	(pt 1216 344)
-	(pt 1064 344)
-	(bus)
-)
-(connector
 	(pt 1208 360)
 	(pt 1208 368)
 	(bus)
@@ -527,7 +521,13 @@ applicable agreement for further details.
 (connector
 	(text "noise_out[9..0]" (rect 1416 328 1489 340)(font "Arial" ))
 	(pt 1416 344)
-	(pt 1448 344)
+	(pt 1496 344)
+	(bus)
+)
+(connector
+	(text "noise[31..22]" (rect 1074 328 1137 340)(font "Arial" ))
+	(pt 1216 344)
+	(pt 1064 344)
 	(bus)
 )
 (junction (pt 40 432))
