@@ -650,7 +650,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 952 352 984 368)
+	(rect 960 344 992 360)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 5 26 17)(font "Arial" )(invisible))
 	(port
@@ -984,12 +984,12 @@ applicable agreement for further details.
 )
 (connector
 	(pt 1104 216)
-	(pt 1104 368)
+	(pt 1104 360)
 	(bus)
 )
 (connector
-	(pt 1104 368)
-	(pt 968 368)
+	(pt 1104 360)
+	(pt 976 360)
 	(bus)
 )
 (junction (pt 360 96))

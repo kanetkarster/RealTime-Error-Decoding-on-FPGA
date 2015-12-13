@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -24 424 152 440)
+	(rect -32 384 144 400)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "vol[2..0]" (rect 9 0 50 12)(font "Arial" ))
 	(pt 176 8)
@@ -202,7 +202,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -556,9 +556,58 @@ applicable agreement for further details.
 	(pt 1064 136)
 	(bus)
 )
+(connector
+	(pt 152 392)
+	(pt 152 368)
+	(bus)
+)
+(connector
+	(pt 144 392)
+	(pt 152 392)
+	(bus)
+)
+(connector
+	(pt 552 168)
+	(pt 408 168)
+	(bus)
+)
+(connector
+	(pt 408 168)
+	(pt 408 368)
+	(bus)
+)
+(connector
+	(pt 152 368)
+	(pt 408 368)
+	(bus)
+)
+(connector
+	(pt 408 368)
+	(pt 552 368)
+	(bus)
+)
+(connector
+	(pt 552 352)
+	(pt 288 352)
+)
+(connector
+	(pt 288 152)
+	(pt 288 352)
+)
+(connector
+	(text "drop[2]" (rect 250 136 284 148)(font "Arial" ))
+	(pt 240 152)
+	(pt 288 152)
+)
+(connector
+	(pt 288 152)
+	(pt 552 152)
+)
 (junction (pt 1152 56))
 (junction (pt 152 72))
 (junction (pt 152 40))
 (junction (pt 512 56))
 (junction (pt 512 136))
 (junction (pt 1128 136))
+(junction (pt 408 368))
+(junction (pt 288 152))
