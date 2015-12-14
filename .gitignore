@@ -65,3 +65,6 @@
 !/src
 !/tests/[^vhd]
 *.bak
+html/
+latex/
+
